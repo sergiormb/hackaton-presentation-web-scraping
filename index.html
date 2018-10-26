@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Web Scraping</title>
+  <meta name="description" content="Web Scraping by sergiormb">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
+
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+  <!-- FACEBOOK -->
+  <meta property="og:url" content="https://sergiormb.github.io/"> <!-- YOUR URL -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Web Scraping a lo JIBIRI"> <!-- EDIT -->
+  <meta property="og:description" content="Diapositivas usadas para el Hackaton del Aula de Software Libre de la Universidad de Córdoba.">
+  <!-- EDIT -->
+  <meta property="og:updated_time" content="2017-01-04T17:20:50"> <!-- EDIT -->
+  <meta property="og:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@sergiormb"> <!-- EDIT -->
+  <meta name="twitter:creator" content="@sergiormb"> <!-- EDIT -->
+  <meta name="twitter:title" content="Web Scraping a lo JIBIRI"> <!-- EDIT -->
+  <meta name="twitter:description" content="Diapositivas usadas para el Hackaton del Aula de Software Libre de la Universidad de Córdoba.">
+  <!-- EDIT -->
+  <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+
+</head>
+
+<body>
+  <header role="banner">
+    <nav role="navigation">
+      <ul>
+        <li class="github">
+          <a rel="external" href="https://sergiormb.github.io/" title="Github">
+            <svg class="fa-github">
+              <use xlink:href="#fa-github"></use>
+            </svg>
+            <em>sergiormb</em>
+          </a>
+        </li>
+        <li class="twitter">
+          <a rel="external" href="https://twitter.com/sergiormb" title="Twitter">
+            <svg class="fa-twitter">
+              <use xlink:href="#fa-twitter"></use>
+            </svg>
+            <em>@sergiormb</em>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article id="webslides" class="vertical">
+
+
+      <section>
+        <span class="background"></span>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h1><strong>Web Scraping</strong></h1>
+          <p class="text-intro">Robando información a lo JIBIRI
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2><strong>¿Qué me estas contando máquina?</strong></h2>
+          <p class="text-intro">Imagina que vamos a crear un bot que nos devuelva la nota media de una película en
+            FilmAffinity</p>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2><strong>FilmAffinity no tiene API pública</strong></h2>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section>
+        <span class="background" style="background-image:url('https://media.giphy.com/media/3og0IMkPCLBMcJV6so/giphy.gif')"></span>
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2><strong>¡Vamos a ello!</strong></h2>
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li>
+                <h2>Extraer información</h2>
+                <p>requests, urllib2, etc... - <strong> Selenium, scrapy</strong> </p>
+              </li>
+              <li>
+                <h2>Procesar información</h2>
+                <p>BeautifulSoup - <strong> Selenium, scrapy</strong></p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <h3><strong>Picando código</strong></h3>
+              <p class="text-intro">La url de busqueda es https://www.filmaffinity.com/es/search.php?stext=<strong>tres+metros+sobre</strong></p>
+            </div>
+            <!-- .end .column -->
+
+            <div class="column">
+              <img src="static/images/url_filmaffinity.png" </div> <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <h3><strong>Identificamos la información</strong></h3>
+              <p class="text-intro">Abrimos con el inspector de elementos del navegador y buscamos la información que
+                necesitamos</p>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <img src="static/images/html.png" </div> <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+      </section>
+      <section>
+        <span class="background" style="background-image:url('https://i.gifer.com/AEqH.gif')"></span>
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <h3><strong>Sacamos información</strong></h3>
+              <p class="text-intro">La url de busqueda es https://www.filmaffinity.com/es/search.php?stext=<strong>tres+metros+sobre</strong></p>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <pre>
+  <span class="code-comment">import requests</span>
+  <span class="code-comment">from bs4 import BeautifulSoup</span>
+  # Obtenemos información
+  response = requests.get('https://www.filmaffinity.com/es/search.php?stext=tres+metros')
+  
+
+  # Procesamos información
+  soup = BeautifulSoup(response.content)
+  rating_div = soup.find("div", {"class": "avgrat-box"})
+  rating_div.get_text()
+  '4,8'
+</pre>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section>
+        <span class="background" style="background-image:url('https://media1.tenor.com/images/6a75e420a0ad4f055250cdfcfa141457/tenor.gif?itemid=9963887')"></span>
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2><strong>A tener en cuenta...</strong></h2>
+          <div class="bg-white shadow">
+            <ul class="flexblock reasons">
+              <li>
+                <h2>No vale reinventar la rueda</h2>
+                <p>Antes de ponerte a picar código, busca si ese servicio tiene una API púbica disponible u otras
+                  librerías que te proporcionen esa información</p>
+              </li>
+              <li>
+                <h2>Los servidores te paran los pies</h2>
+                <p>Cuando haces muchas consultas seguidas los servidores webs te paran los pies</p>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50 aligncenter">
+          <h2><strong>Python FilmAffinity</strong></h2>
+          <img src="static/images/python_filmaffinity.png">
+          <!-- .end .wrap -->
+      </section>
+      <section class="slide-bottom">
+        <div class="wrap">
+          <div class="content-right text-serif">
+            <h2>
+              <strong>Thanks.</strong>
+              <a target="_blank" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=Finally,%20everything%20you%20need%20to%20make%20HTML%20presentations%20in%20a%20fast/beautiful%20way.%20@WebSlides%20=%20Good%20karma%20&mdash;%20https://webslides.tv">
+                <svg class="fa-twitter">
+                  <use xlink:href="#fa-twitter"></use>
+                </svg>
+                <svg class="fa-github">
+                  <use xlink:href="#fa-github"></use>
+                </svg>
+              </a>
+            </h2>
+            <p>NO, TU LENGUAJE NO ES MEJOR SOLO PORQUÉ TU LO USES</p>
+            <p><a href="https://twitter.com/sergiormb">@sergiormb</a></p>
+          </div>
+          <!-- .end .content-right -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+    </article>
+    <!-- end article -->
+  </main>
+  <!-- end main -->
+
+
+  <!-- Required -->
+  <script src="static/js/webslides.js"></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="static/js/svg-icons.js"></script>
+
+</body>
+
+</html>
